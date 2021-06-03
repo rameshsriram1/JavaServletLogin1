@@ -4,7 +4,7 @@ node{
    def tomcatBin = 'F:\\ramesh\\Software\\apache-tomcat-9.0.45-windows-x64\\apache-tomcat-9.0.45\\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
-     git 'https://github.com/rameshsriram1/project'
+     git 'https://github.com/rameshsriram1/JavaServletLogin1.git'
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
