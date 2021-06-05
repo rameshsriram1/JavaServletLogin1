@@ -26,9 +26,9 @@ node{
    stage('Deploy to Tomcat'){
      bat "copy target\\JavaServletLogin.war \"${tomcatWeb}\\JavaServletLogin.war\""
    }
-      stage ('Start Tomcat Server') {
+      /* stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
          bat "${tomcatBin}\\startup.bat"
          sleep(time:100,unit:"SECONDS")
-   }
+   } */
 }
